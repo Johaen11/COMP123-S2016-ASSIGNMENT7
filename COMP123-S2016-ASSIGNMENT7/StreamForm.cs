@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace COMP123_S2016_ASSIGNMENT7
 {
-    public partial class Form1 : Form
+    public partial class StreamForm : Form
     {
-        public Form1()
+        public StreamForm()
         {
             InitializeComponent();
         }

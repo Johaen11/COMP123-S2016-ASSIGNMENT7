@@ -9,13 +9,16 @@ using System.Windows.Forms;
  * Date: August 06, 2016
  * StudentID: 300880309
  * Description: a multi-form project that allows the user to select	a Movie	to view	from an	online	video streaming	service	called	“Movie	Bonanza”.
- * Version: 0.0.1
+ * Version: 0.0.2
  */
 
 namespace COMP123_S2016_ASSIGNMENT7
 {
     static class Program
     {
+        public static SplashScreenForm splashScreen;
+        public static SelectionForm selectionForm;
+
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -24,7 +27,12 @@ namespace COMP123_S2016_ASSIGNMENT7
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+
+            splashScreen = new SplashScreenForm();
+            selectionForm = new SelectionForm();
+
+            Application.Run(splashScreen);
+            
         }
     }
 }
