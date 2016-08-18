@@ -16,5 +16,25 @@ namespace COMP123_S2016_ASSIGNMENT7
         {
             InitializeComponent();
         }
+        
+        private void Hello(object sender, EventArgs e)
+        {
+           
+        }
+
+        private void CancelButton_Click(object sender, EventArgs e)
+        {
+            SelectionForm selectionForm = new SelectionForm();
+            this.Close();
+            selectionForm.Show();
+
+        }
+
+        private void StreamButton_Click(object sender, EventArgs e)
+        {
+            StreamForm streamForm = new StreamForm();
+            this.Close();
+            streamForm.Show();
+        }
     }
 }

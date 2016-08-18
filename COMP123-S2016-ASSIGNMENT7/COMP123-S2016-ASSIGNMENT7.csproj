@@ -46,6 +46,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="MovieInformation.cs" />
     <Compile Include="OrderForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -72,6 +73,9 @@
     <Compile Include="StreamForm.Designer.cs">
       <DependentUpon>StreamForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="OrderForm.resx">
+      <DependentUpon>OrderForm.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="SelectionForm.resx">
       <DependentUpon>SelectionForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -86,7 +90,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="ClassDiagram1.cd" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -99,6 +105,31 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\cedarrapids.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\Cedar Rapids.jpg" />
+    <Content Include="Images\Company Men.jpg" />
+    <Content Include="Images\Death Race 2.jpg" />
+    <Content Include="Images\FootLoose.jpg" />
+    <Content Include="Images\Gnomeo and Juliet.jpg" />
+    <Content Include="Images\I am Number Four.jpg" />
+    <Content Include="Images\Just Go With It.jpg" />
+    <Content Include="Images\No String Attached.jpg" />
+    <Content Include="Images\Real Steel.jpg" />
+    <Content Include="Images\Sanctum.jpg" />
+    <Content Include="Images\Season of the Witch.jpg" />
+    <Content Include="Images\The Dilemma.jpg" />
+    <Content Include="Images\The Eagle.jpg" />
+    <Content Include="Images\The Green Hornet.jpg" />
+    <Content Include="Images\The Mechanic.jpg" />
+    <Content Include="Images\The Other Woman.jpg" />
+    <Content Include="Images\The Rite.jpg" />
+    <Content Include="Images\The Roommate.jpg" />
+    <Content Include="Images\The Way Back.jpg" />
+    <Content Include="Images\Waiting for Forever.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

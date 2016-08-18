@@ -29,5 +29,10 @@ namespace COMP123_S2016_ASSIGNMENT7
             Program.selectionForm.Show();
             this.Hide();
         }
+
+        private void SplashScreenForm_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

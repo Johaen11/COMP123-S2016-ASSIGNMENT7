@@ -60,6 +60,7 @@
             this.Name = "SplashScreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreenForm";
+            this.Load += new System.EventHandler(this.SplashScreenForm_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
