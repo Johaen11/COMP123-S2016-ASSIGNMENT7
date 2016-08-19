@@ -130,6 +130,7 @@
     <Content Include="Images\The Roommate.jpg" />
     <Content Include="Images\The Way Back.jpg" />
     <Content Include="Images\Waiting for Forever.jpg" />
+    <None Include="Resources\Movie Bonanza.PNG" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

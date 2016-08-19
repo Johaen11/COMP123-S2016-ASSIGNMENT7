@@ -30,7 +30,8 @@
         {
             this.components = new System.ComponentModel.Container();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.MovieBonanzaLabel = new System.Windows.Forms.Label();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // timer1
@@ -39,37 +40,35 @@
             this.timer1.Interval = 3000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // MovieBonanzaLabel
+            // pictureBox1
             // 
-            this.MovieBonanzaLabel.AutoSize = true;
-            this.MovieBonanzaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MovieBonanzaLabel.Location = new System.Drawing.Point(151, 85);
-            this.MovieBonanzaLabel.Name = "MovieBonanzaLabel";
-            this.MovieBonanzaLabel.Size = new System.Drawing.Size(299, 37);
-            this.MovieBonanzaLabel.TabIndex = 0;
-            this.MovieBonanzaLabel.Text = "MOVIE BONANZA";
-            this.MovieBonanzaLabel.Click += new System.EventHandler(this.MovieBonanzaLabel_Click);
+            this.pictureBox1.Image = global::COMP123_S2016_ASSIGNMENT7.Properties.Resources.Movie_Bonanza;
+            this.pictureBox1.Location = new System.Drawing.Point(-7, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(471, 268);
+            this.pictureBox1.TabIndex = 1;
+            this.pictureBox1.TabStop = false;
             // 
             // SplashScreenForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(550, 261);
-            this.Controls.Add(this.MovieBonanzaLabel);
+            this.ClientSize = new System.Drawing.Size(471, 268);
+            this.Controls.Add(this.pictureBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "SplashScreenForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SplashScreenForm";
             this.Load += new System.EventHandler(this.SplashScreenForm_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.Label MovieBonanzaLabel;
+        private System.Windows.Forms.PictureBox pictureBox1;
     }
 }
 

@@ -14,7 +14,12 @@ namespace COMP123_S2016_ASSIGNMENT7
     {
         public OrderForm()
         {
+
+           
             InitializeComponent();
+
+            label1.Visible = false;
+            textBox7.Visible = false;
         }
         
         private void Hello(object sender, EventArgs e)
@@ -35,6 +40,21 @@ namespace COMP123_S2016_ASSIGNMENT7
             StreamForm streamForm = new StreamForm();
             this.Close();
             streamForm.Show();
+        }
+
+        private void checkBox1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (checkBox1.Checked == true)
+            {
+                textBox7.Visible = true;
+                label1.Visible = true;
+            }
+            else
+            {
+
+                textBox7.Visible = false;
+                label1.Visible = false;
+            }
         }
     }
 }

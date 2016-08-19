@@ -28,22 +28,7 @@ namespace COMP123_S2016_ASSIGNMENT7
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            List<MovieInformation> Movies = new List<MovieInformation>();
-            Movies.Add(new MovieInformation("Cedar Rapids", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("Death Race 2", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("FootLoose", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("Gnomeo and Juliet", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("I am Number Four", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("Just Go With It", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("No String Attacheds", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("Real Steel", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("Sanctum", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("Season of the Witch", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("The Dilemma", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("The Eagle", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("The Green Hornet", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("The Mechanic", 1.99, "Comedy"));
-            Movies.Add(new MovieInformation("The Other Woman", 1.99, "Comedy"));
+           
 
             splashScreen = new SplashScreenForm();
             selectionForm = new SelectionForm();
