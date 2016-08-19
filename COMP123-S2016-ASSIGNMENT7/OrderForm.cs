@@ -7,24 +7,25 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using COMP123_S2016_ASSIGNMENT7;
 
 namespace COMP123_S2016_ASSIGNMENT7
 {
     public partial class OrderForm : Form
     {
+        public SelectionForm orderformer { get; set; }
+
+        List<MovieInformation> Movies = new List<MovieInformation>();
         public OrderForm()
         {
 
            
             InitializeComponent();
 
-            label1.Visible = false;
-            textBox7.Visible = false;
-        }
-        
-        private void Hello(object sender, EventArgs e)
-        {
            
+           // textBox1.Text = SelectionForm.TitleTextbox.Text;
+            AdditionalChargeLabel.Visible = false;
+            textBox7.Visible = false;
         }
 
         private void CancelButton_Click(object sender, EventArgs e)
@@ -47,24 +48,34 @@ namespace COMP123_S2016_ASSIGNMENT7
             if (checkBox1.Checked == true)
             {
                 textBox7.Visible = true;
-                label1.Visible = true;
+                AdditionalChargeLabel.Visible = true;
             }
             else
             {
 
                 textBox7.Visible = false;
-                label1.Visible = false;
+                AdditionalChargeLabel.Visible = false;
             }
         }
 
         private void printToolStripMenuItem_Click(object sender, EventArgs e)
         {
+            
             MessageBox.Show("PRINTING YOUR ORDER");
+            
         }
 
         private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            
+           Program.aboutBox.Show();
+          
+        }
+
+        private void BackButtonLabel_Click(object sender, EventArgs e)
+        {
+            SelectionForm selectionForm = new SelectionForm();
+            selectionForm.Show();
+            this.Hide();
         }
     }
 }

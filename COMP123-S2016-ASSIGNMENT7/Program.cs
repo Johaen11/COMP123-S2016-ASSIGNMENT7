@@ -19,7 +19,7 @@ namespace COMP123_S2016_ASSIGNMENT7
         public static SplashScreenForm splashScreen;
         public static SelectionForm selectionForm;
         public static OrderForm orderForm;
-        
+        public static AboutBox aboutBox;
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -34,31 +34,10 @@ namespace COMP123_S2016_ASSIGNMENT7
             splashScreen = new SplashScreenForm();
             selectionForm = new SelectionForm();
             orderForm = new OrderForm();
-            
+            aboutBox = new AboutBox();
+
             Application.Run(splashScreen);
 
-            /*
-             Cedar Rapids
-Company Men
-Death Race 2
-FootLoose
-Gnomeo and Juliet
-I am Number Four
-Just Go With It
-No String Attached
-Real Steel
-Sanctum
-Season of the Witch
-The Dilemma
-The Eagle
-The Green Hornet
-The Mechanic
-The Other Woman
-The Rite
-The Roommate
-The Way Back
-Waiting for Forever
-             */
         }
     }
 }

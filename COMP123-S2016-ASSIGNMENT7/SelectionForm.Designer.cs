@@ -38,9 +38,9 @@
             this.TitleTextbox = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.NextButton = new System.Windows.Forms.Button();
-            this.PictureBox = new System.Windows.Forms.PictureBox();
             this.CurrentMoviesLabel = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.PictureBox = new System.Windows.Forms.PictureBox();
             this.yourSelection.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PictureBox)).BeginInit();
             this.SuspendLayout();
@@ -171,16 +171,6 @@
             this.NextButton.UseVisualStyleBackColor = true;
             this.NextButton.Click += new System.EventHandler(this.NextButton_Click);
             // 
-            // PictureBox
-            // 
-            this.PictureBox.InitialImage = null;
-            this.PictureBox.Location = new System.Drawing.Point(16, 63);
-            this.PictureBox.Name = "PictureBox";
-            this.PictureBox.Size = new System.Drawing.Size(247, 270);
-            this.PictureBox.TabIndex = 6;
-            this.PictureBox.TabStop = false;
-            this.PictureBox.Click += new System.EventHandler(this.pictureBox1_Click);
-            // 
             // CurrentMoviesLabel
             // 
             this.CurrentMoviesLabel.AutoSize = true;
@@ -201,6 +191,16 @@
             this.label1.Size = new System.Drawing.Size(475, 20);
             this.label1.TabIndex = 10;
             this.label1.Text = "Choose the movie you wish to STREAM from the list below";
+            // 
+            // PictureBox
+            // 
+            this.PictureBox.InitialImage = null;
+            this.PictureBox.Location = new System.Drawing.Point(16, 63);
+            this.PictureBox.Name = "PictureBox";
+            this.PictureBox.Size = new System.Drawing.Size(247, 270);
+            this.PictureBox.TabIndex = 6;
+            this.PictureBox.TabStop = false;
+            this.PictureBox.Click += new System.EventHandler(this.pictureBox1_Click);
             // 
             // SelectionForm
             // 
@@ -237,12 +237,12 @@
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.TextBox CostTextBox;
         private System.Windows.Forms.TextBox CategoryTextBox;
-        private System.Windows.Forms.TextBox TitleTextbox;
         private System.Windows.Forms.Label CostLabel;
         private System.Windows.Forms.PictureBox PictureBox;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button NextButton;
         private System.Windows.Forms.Label CurrentMoviesLabel;
         private System.Windows.Forms.Label label1;
+        public System.Windows.Forms.TextBox TitleTextbox;
     }
 }

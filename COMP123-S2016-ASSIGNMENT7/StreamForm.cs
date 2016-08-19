@@ -16,5 +16,10 @@ namespace COMP123_S2016_ASSIGNMENT7
         {
             InitializeComponent();
         }
+
+        private void OkButton_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

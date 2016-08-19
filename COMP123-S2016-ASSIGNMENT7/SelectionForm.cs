@@ -73,8 +73,14 @@ namespace COMP123_S2016_ASSIGNMENT7
 
         private void NextButton_Click(object sender, EventArgs e)
         {
-            List<string> movieInfo = new List<String>();
+           
             OrderForm orderForm = new OrderForm();
+            orderForm.orderformer = this;
+            orderForm.TitletextBox2.Text = TitleTextbox.Text;
+            orderForm.CategorytextBox2.Text = CategoryTextBox.Text;
+            orderForm.CosttextBox2.Text = CostTextBox.Text;
+            //List<string> movieInfo = new List<String>();
+            
             orderForm.Show();
             this.Hide();
 

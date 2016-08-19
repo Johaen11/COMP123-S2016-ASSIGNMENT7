@@ -34,17 +34,16 @@
             this.streamToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancelToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.helpToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.CancelButton = new System.Windows.Forms.Button();
             this.StreamButton = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.CategoryLabel = new System.Windows.Forms.Label();
             this.TitleLabel = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.CategorytextBox2 = new System.Windows.Forms.TextBox();
+            this.TitletextBox2 = new System.Windows.Forms.TextBox();
             this.YouOrder = new System.Windows.Forms.GroupBox();
             this.checkBox1 = new System.Windows.Forms.CheckBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.AdditionalChargeLabel = new System.Windows.Forms.Label();
             this.textBox7 = new System.Windows.Forms.TextBox();
             this.GrandTotalLabel = new System.Windows.Forms.Label();
             this.SalesTaxLabel = new System.Windows.Forms.Label();
@@ -53,9 +52,10 @@
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.ButtonLabel = new System.Windows.Forms.Button();
+            this.CosttextBox2 = new System.Windows.Forms.TextBox();
+            this.BackButtonLabel = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.aboutToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.YouOrder.SuspendLayout();
@@ -86,21 +86,21 @@
             // printToolStripMenuItem
             // 
             this.printToolStripMenuItem.Name = "printToolStripMenuItem";
-            this.printToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.printToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.printToolStripMenuItem.Text = "Print";
             this.printToolStripMenuItem.Click += new System.EventHandler(this.printToolStripMenuItem_Click);
             // 
             // streamToolStripMenuItem
             // 
             this.streamToolStripMenuItem.Name = "streamToolStripMenuItem";
-            this.streamToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.streamToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.streamToolStripMenuItem.Text = "Stream";
             this.streamToolStripMenuItem.Click += new System.EventHandler(this.StreamButton_Click);
             // 
             // cancelToolStripMenuItem
             // 
             this.cancelToolStripMenuItem.Name = "cancelToolStripMenuItem";
-            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.cancelToolStripMenuItem.Size = new System.Drawing.Size(111, 22);
             this.cancelToolStripMenuItem.Text = "Cancel";
             this.cancelToolStripMenuItem.Click += new System.EventHandler(this.CancelButton_Click);
             // 
@@ -111,13 +111,6 @@
             this.helpToolStripMenuItem.Name = "helpToolStripMenuItem";
             this.helpToolStripMenuItem.Size = new System.Drawing.Size(44, 20);
             this.helpToolStripMenuItem.Text = "Help";
-            // 
-            // aboutToolStripMenuItem
-            // 
-            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
-            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
-            this.aboutToolStripMenuItem.Text = "About";
-            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
             // 
             // CancelButton
             // 
@@ -144,8 +137,9 @@
             this.groupBox1.Controls.Add(this.CategoryLabel);
             this.groupBox1.Controls.Add(this.TitleLabel);
             this.groupBox1.Controls.Add(this.pictureBox1);
-            this.groupBox1.Controls.Add(this.textBox2);
-            this.groupBox1.Controls.Add(this.textBox1);
+            this.groupBox1.Controls.Add(this.CategorytextBox2);
+            this.groupBox1.Controls.Add(this.TitletextBox2);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(26, 73);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(338, 434);
@@ -173,26 +167,28 @@
             this.TitleLabel.TabIndex = 3;
             this.TitleLabel.Text = "Title";
             // 
-            // textBox2
+            // CategorytextBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(23, 105);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(221, 20);
-            this.textBox2.TabIndex = 1;
+            this.CategorytextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CategorytextBox2.Location = new System.Drawing.Point(23, 105);
+            this.CategorytextBox2.Name = "CategorytextBox2";
+            this.CategorytextBox2.ReadOnly = true;
+            this.CategorytextBox2.Size = new System.Drawing.Size(221, 20);
+            this.CategorytextBox2.TabIndex = 1;
             // 
-            // textBox1
+            // TitletextBox2
             // 
-            this.textBox1.Location = new System.Drawing.Point(23, 59);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(221, 20);
-            this.textBox1.TabIndex = 0;
+            this.TitletextBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.TitletextBox2.Location = new System.Drawing.Point(23, 59);
+            this.TitletextBox2.Name = "TitletextBox2";
+            this.TitletextBox2.ReadOnly = true;
+            this.TitletextBox2.Size = new System.Drawing.Size(221, 20);
+            this.TitletextBox2.TabIndex = 0;
             // 
             // YouOrder
             // 
             this.YouOrder.Controls.Add(this.checkBox1);
-            this.YouOrder.Controls.Add(this.label1);
+            this.YouOrder.Controls.Add(this.AdditionalChargeLabel);
             this.YouOrder.Controls.Add(this.textBox7);
             this.YouOrder.Controls.Add(this.GrandTotalLabel);
             this.YouOrder.Controls.Add(this.SalesTaxLabel);
@@ -201,7 +197,8 @@
             this.YouOrder.Controls.Add(this.textBox6);
             this.YouOrder.Controls.Add(this.textBox5);
             this.YouOrder.Controls.Add(this.textBox4);
-            this.YouOrder.Controls.Add(this.textBox3);
+            this.YouOrder.Controls.Add(this.CosttextBox2);
+            this.YouOrder.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.YouOrder.Location = new System.Drawing.Point(370, 73);
             this.YouOrder.Name = "YouOrder";
             this.YouOrder.Size = new System.Drawing.Size(283, 362);
@@ -221,14 +218,15 @@
             this.checkBox1.UseVisualStyleBackColor = true;
             this.checkBox1.CheckedChanged += new System.EventHandler(this.checkBox1_CheckedChanged);
             // 
-            // label1
+            // AdditionalChargeLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(55, 126);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 9;
-            this.label1.Text = "label1";
+            this.AdditionalChargeLabel.AutoSize = true;
+            this.AdditionalChargeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.AdditionalChargeLabel.Location = new System.Drawing.Point(1, 124);
+            this.AdditionalChargeLabel.Name = "AdditionalChargeLabel";
+            this.AdditionalChargeLabel.Size = new System.Drawing.Size(152, 20);
+            this.AdditionalChargeLabel.TabIndex = 9;
+            this.AdditionalChargeLabel.Text = "Additional Charge";
             // 
             // textBox7
             // 
@@ -301,22 +299,23 @@
             this.textBox4.Size = new System.Drawing.Size(100, 20);
             this.textBox4.TabIndex = 1;
             // 
-            // textBox3
+            // CosttextBox2
             // 
-            this.textBox3.Location = new System.Drawing.Point(156, 61);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 0;
+            this.CosttextBox2.Location = new System.Drawing.Point(156, 61);
+            this.CosttextBox2.Name = "CosttextBox2";
+            this.CosttextBox2.ReadOnly = true;
+            this.CosttextBox2.Size = new System.Drawing.Size(100, 20);
+            this.CosttextBox2.TabIndex = 0;
             // 
-            // ButtonLabel
+            // BackButtonLabel
             // 
-            this.ButtonLabel.Location = new System.Drawing.Point(386, 484);
-            this.ButtonLabel.Name = "ButtonLabel";
-            this.ButtonLabel.Size = new System.Drawing.Size(75, 23);
-            this.ButtonLabel.TabIndex = 5;
-            this.ButtonLabel.Text = "Button";
-            this.ButtonLabel.UseVisualStyleBackColor = true;
+            this.BackButtonLabel.Location = new System.Drawing.Point(386, 484);
+            this.BackButtonLabel.Name = "BackButtonLabel";
+            this.BackButtonLabel.Size = new System.Drawing.Size(75, 23);
+            this.BackButtonLabel.TabIndex = 5;
+            this.BackButtonLabel.Text = "Back";
+            this.BackButtonLabel.UseVisualStyleBackColor = true;
+            this.BackButtonLabel.Click += new System.EventHandler(this.BackButtonLabel_Click);
             // 
             // pictureBox1
             // 
@@ -326,12 +325,19 @@
             this.pictureBox1.TabIndex = 2;
             this.pictureBox1.TabStop = false;
             // 
+            // aboutToolStripMenuItem
+            // 
+            this.aboutToolStripMenuItem.Name = "aboutToolStripMenuItem";
+            this.aboutToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.aboutToolStripMenuItem.Text = "About";
+            this.aboutToolStripMenuItem.Click += new System.EventHandler(this.aboutToolStripMenuItem_Click);
+            // 
             // OrderForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(665, 535);
-            this.Controls.Add(this.ButtonLabel);
+            this.Controls.Add(this.BackButtonLabel);
             this.Controls.Add(this.YouOrder);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.StreamButton);
@@ -363,11 +369,9 @@
         private System.Windows.Forms.Label CategoryLabel;
         private System.Windows.Forms.Label TitleLabel;
         private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.GroupBox YouOrder;
         private System.Windows.Forms.CheckBox checkBox1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label AdditionalChargeLabel;
         private System.Windows.Forms.TextBox textBox7;
         private System.Windows.Forms.Label GrandTotalLabel;
         private System.Windows.Forms.Label SalesTaxLabel;
@@ -376,11 +380,13 @@
         private System.Windows.Forms.TextBox textBox6;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.TextBox textBox4;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Button ButtonLabel;
+        private System.Windows.Forms.Button BackButtonLabel;
         private System.Windows.Forms.ToolStripMenuItem printToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem streamToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cancelToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem aboutToolStripMenuItem;
+        public System.Windows.Forms.TextBox CategorytextBox2;
+        public System.Windows.Forms.TextBox TitletextBox2;
+        public System.Windows.Forms.TextBox CosttextBox2;
     }
 }
