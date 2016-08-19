@@ -219,7 +219,7 @@
             this.Name = "SelectionForm";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "SelectionForm";
+            this.Text = "Movie Bonanza - Your Online Streaming Form";
             this.Load += new System.EventHandler(this.SelectionForm_Load);
             this.yourSelection.ResumeLayout(false);
             this.yourSelection.PerformLayout();

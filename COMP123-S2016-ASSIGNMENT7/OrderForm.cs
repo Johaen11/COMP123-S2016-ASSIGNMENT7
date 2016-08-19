@@ -56,5 +56,15 @@ namespace COMP123_S2016_ASSIGNMENT7
                 label1.Visible = false;
             }
         }
+
+        private void printToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("PRINTING YOUR ORDER");
+        }
+
+        private void aboutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            
+        }
     }
 }

@@ -19,6 +19,7 @@ namespace COMP123_S2016_ASSIGNMENT7
         public static SplashScreenForm splashScreen;
         public static SelectionForm selectionForm;
         public static OrderForm orderForm;
+        
         /// <summary>
         /// The main entry point for the application.
         /// </summary>
@@ -33,6 +34,7 @@ namespace COMP123_S2016_ASSIGNMENT7
             splashScreen = new SplashScreenForm();
             selectionForm = new SelectionForm();
             orderForm = new OrderForm();
+            
             Application.Run(splashScreen);
 
             /*
